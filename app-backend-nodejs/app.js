@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
 app.use(express.json());
 app.post('/filmes',(req,res) => {
 const {titulo, genero} = req.body;
-res.send(`Filme: ${titulo} - Genero: ${genero}, recebido`);
+res.send(`Filmes: ${titulo} - Genero: ${genero}, recebido`);
 });
 app.post('/livros',(req,res) => {
 const {autor, nome, editora} = req.body;
